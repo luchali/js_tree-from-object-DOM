@@ -33,9 +33,6 @@ function createTree(element, data) {
     ul.appendChild(li);
 
     if (Object.keys(entry[1]).length > 0) {
-      const newUl = document.createElement('ul');
-
-      element.appendChild(newUl);
       createTree(li, entry[1]);
     }
   }
